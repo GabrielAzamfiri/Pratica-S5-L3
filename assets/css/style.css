@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  background-color: #fef7e2;
+}
+nav button,
+.card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdf7f;
+  border-radius: 30px;
+  height: 2.5rem;
+  width: 6rem;
+  color: #742305;
+  font-weight: 600;
+  border: none;
+  font-size: 0.8rem;
+}
+.logo {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.shop {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+}
+.flex {
+  display: flex;
+}
+.nav {
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 1rem;
+}
+main {
+  padding: 2rem 1rem;
+  color: #742305;
+  font-size: 0.7rem;
+}
+h1,
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #742305;
+  margin-bottom: 2rem;
+}
+.cards {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.card {
+  background-color: #fef7e2;
+  width: 250px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.card img {
+  width: 100%;
+}
+.infoCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 2rem;
+}
+h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.bio {
+  text-align: center;
+}
+.bio span {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+.card button {
+  height: 1.5rem;
+  width: 10rem;
+  font-size: 0.6rem;
+
+  background-color: #ffdf7f;
+  margin: auto;
+  margin-bottom: 0.8rem;
+}
+.aboutHoney {
+  background-color: #fef7e2;
+  padding: 1.5rem;
+  border-radius: 20px;
+  font-size: 0.6rem;
+}
+h3 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.aboutHoney img {
+  width: 100%;
+  margin-top: 1.5rem;
+}
