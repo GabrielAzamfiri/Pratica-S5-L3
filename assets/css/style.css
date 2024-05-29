@@ -23,6 +23,7 @@ nav button,
   font-weight: 600;
   border: none;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .logo {
   width: 2rem;
@@ -100,7 +101,8 @@ h4 {
   background-color: #fef7e2;
   padding: 1.5rem;
   border-radius: 20px;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
 }
 h3 {
   font-size: 0.9rem;
@@ -110,4 +112,51 @@ h3 {
 .aboutHoney img {
   width: 100%;
   margin-top: 1.5rem;
+}
+.nr5 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav button {
+    width: 8rem;
+    height: 4rem;
+  }
+  .shop {
+    order: -1;
+  }
+  .nav {
+    gap: 0.8rem;
+  }
+  .card {
+    width: 200px;
+  }
+  .nr5 {
+    display: inline-block;
+  }
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  .aboutHoney {
+    display: flex;
+    gap: 1rem;
+  }
+  .aboutHoney img {
+    order: -1;
+  }
+  .aboutHoney img {
+    margin-top: unset;
+    width: 50%;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 }
