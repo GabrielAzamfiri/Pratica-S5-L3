@@ -62,13 +62,14 @@ h2 {
 }
 .card {
   background-color: #fef7e2;
-  width: 250px;
+  width: 40%;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 2rem;
 }
 .card img {
   width: 100%;
+  object-fit: cover;
 }
 .infoCard {
   display: flex;
@@ -90,11 +91,11 @@ h4 {
 }
 .card button {
   height: 1.5rem;
-  width: 10rem;
+  width: 60%;
   font-size: 0.6rem;
 
   background-color: #ffdf7f;
-  margin: auto;
+  margin-inline: auto;
   margin-bottom: 0.8rem;
 }
 .aboutHoney {
@@ -116,6 +117,62 @@ h3 {
 .nr5 {
   display: none;
 }
+@media screen and (max-width: 575px) {
+  nav {
+    border-radius: 90px;
+    margin: 1rem;
+  }
+  ul {
+    flex-wrap: wrap;
+  }
+  ul button {
+    width: 35%;
+    height: 3rem;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  .shop {
+    display: flex;
+    order: -1;
+    width: 80%;
+    font-size: 2rem;
+  }
+  .logo {
+    width: 2.8rem;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  .infoCard span {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+  .infoCard {
+    margin-block: 1rem;
+  }
+
+  .nr5,
+  .nr4 {
+    display: inline-block;
+  }
+
+  .aboutHoney {
+    font-size: 0.8rem;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     display: flex;
@@ -136,14 +193,58 @@ h3 {
     gap: 0.8rem;
   }
   .card {
-    width: 200px;
+    width: 30%;
   }
-  .nr5 {
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  .nr4 {
+    display: none;
+  }
+  .infoCard {
+    align-items: center;
+    margin: 0.8rem 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    display: flex;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav button {
+    width: 8rem;
+    height: 4rem;
+  }
+  .shop {
+    order: -1;
+  }
+  .nav {
+    gap: 0.8rem;
+  }
+  .card {
+    width: 18%;
+  }
+  .nr5,
+  .nr4 {
     display: inline-block;
   }
   h1,
   h2 {
     font-size: 2rem;
+  }
+  .infoCard {
+    align-items: center;
+    margin: 0.8rem 1rem;
   }
   .aboutHoney {
     display: flex;
