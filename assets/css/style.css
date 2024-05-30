@@ -128,11 +128,11 @@ h3 {
   ul button {
     width: 35%;
     height: 3rem;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0.5rem;
   }
   .shop {
-    display: flex;
+    /* display: flex; */
     order: -1;
     width: 80%;
     font-size: 2rem;
